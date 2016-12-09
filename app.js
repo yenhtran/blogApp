@@ -20,6 +20,7 @@ var blogSchema = new mongoose.Schema({
 var Blog = mongoose.model('blog', blogSchema);
 
 //RESTFUL ROUTES
+//INDEX ROUTE
 app.get('/', function(req, res){
     res.redirect('/blogs');
 });
